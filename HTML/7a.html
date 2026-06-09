@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Number Sign Checker</title>
+</head>
+<body>
+<h2>Check if Number is Positive, Negative, or Zero</h2>
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="checkNumber()">Check</button>
+<p id="result"></p>
+<script>
+function checkNumber() {
+let number = parseFloat(document.getElementById("num").value);
+let result = "";
+if (number > 0) {
+result = " The number is Positive.";
+} else if (number < 0) {
+result = " The number is Negative.";
+} else {
+result = " The number is Zero.";
+}
+document.getElementById("result").innerText = result;
+}
+</script>
+</body>
+</html>

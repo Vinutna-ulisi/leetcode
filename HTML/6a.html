@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Palindrome Rearrangement</title>
+</head>
+<body>
+<h2>Check Palindrome Rearrangement</h2>
+<input type="text" id="inputStr" placeholder="Enter a string">
+<button onclick="checkPalindrome()">Check</button>
+<p id="result"></p>
+<script>
+function checkPalindrome() {
+let str = document.getElementById("inputStr").value.toLowerCase();
+let freq = {};
+for (let char of str) {
+if (char !== ' ') {  
+freq[char] = (freq[char] || 0) + 1;
+}
+}
+let oddCount = 0;
+for (let key in freq) {
+if (freq[key] % 2 !== 0) {
+oddCount++;
+}
+}
+if (oddCount <= 1) {
+document.getElementById("result").innerText = "Yes, can be rearranged into a palindrome.";
+} else {
+document.getElementById("result").innerText = " No, cannot be rearranged into a palindrome.";
+}
+}
+</script>
+</body>
+</html>

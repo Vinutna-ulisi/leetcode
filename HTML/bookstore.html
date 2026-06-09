@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>My Book Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightpink;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .book-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .book {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    .book img {
+      width: 100px;
+      height: 140px;
+    }
+    .book button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book button:hover {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Book Store</h1>
+
+  <div class="book-container">
+    
+    <div class="book">
+      <img src="alchemist.jpg" alt="The Alchemist">
+      <h3>The Alchemist</h3>
+      <p>Author: Paulo Coelho</p>
+      <p>Price: ₹299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="book">
+      <img src="harrypotter.jpg" alt="Harry Potter">
+      <h3>Harry Potter</h3>
+      <p>Author: J.K. Rowling</p>
+      <p>Price: ₹499</p>
+      <button>Add to Cart</button>
+    </div>
+</body>
+</html>

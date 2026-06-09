@@ -1,0 +1,29 @@
+<html>
+<body>
+<script type="text/javascript">
+function calculateResults() {
+var name = document.getElementById("name").value;
+var roll = document.getElementById("roll").value;
+var m1 = parseFloat(document.getElementById("m1").value);
+var m2 = parseFloat(document.getElementById("m2").value);
+var m3 = parseFloat(document.getElementById("m3").value);
+var m4 = parseFloat(document.getElementById("m4").value);
+var m5 = parseFloat(document.getElementById("m5").value);
+
+var total = m1 + m2 + m3 + m4 + m5;
+var average = total / 5;
+document.write("Name:" + name + "\nRoll no:" + roll + "\nTotal:" + total + "\nAverage:" + average.toFixed(2));
+}
+</script>
+<form>
+Name: <input type="text" id="name" /><br/>
+Roll No: <input type="text" id="roll" /><br/>
+Subject 1: <input type="text" id="m1" /><br/>
+Subject 2: <input type="text" id="m2" /><br/>
+Subject 3: <input type="text" id="m3" /><br/>
+Subject 4: <input type="text" id="m4" /><br/>
+Subject 5: <input type="text" id="m5" /><br/><br/>
+<input type="button" value="Calculate" onclick="calculateResults()" />
+</form>
+</body>
+</html>

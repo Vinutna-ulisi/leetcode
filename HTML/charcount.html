@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Character Counter</h2>
+
+    <textarea id="textBox" placeholder="Type something..."></textarea>
+
+    <p>Characters: <span id="count">0</span></p>
+
+    <script>
+        let textBox = document.getElementById("textBox");
+        let count = document.getElementById("count");
+
+        textBox.addEventListener("input", function() {
+            count.textContent = textBox.value.length;
+        });
+    </script>
+
+</body>
+</html>

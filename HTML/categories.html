@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Book Categories - DVR BOOKS</title>
+<style>
+  body {
+    background-color: lightblue;
+    font-family: Arial;
+    text-align: center;
+  }
+  h1 {
+    color: black;
+  }
+  .category {
+    margin: 30px;
+  }
+  .book {
+    display: inline-block;
+    width: 180px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 2px 2px 8px lightgray;
+  }
+  .book img {
+    width: 100px;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+  .price {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+  }
+  .buy-btn {
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buy-btn:hover {
+    background-color: pink;
+  }
+  a {
+    color: darkblue;
+  }
+</style>
+</head>
+<body>
+
+<h1>Book Categories</h1>
+
+<div class="category">
+  <h2>Fiction</h2>
+
+  <div class="book">
+    <img src="gatsby.jpg"><br>
+    The Great Gatsby
+    <span class="price">&#8377;350</span>
+    <form action="order.php" method="POST">
+      <input type="hidden" name="book_name" value="The Great Gatsby">
+      <input type="hidden" name="price" value="350">
+      <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+  </div>
+
+  <div class="book">
+    <img src="harrypotter.jpg"><br>
+    Harry Potter
+    <span class="price">&#8377;500</span>
+    <form action="order.php" method="POST">
+      <input type="hidden" name="book_name" value="Harry Potter">
+      <input type="hidden" name="price" value="500">
+      <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+  </div>
+
+  <div class="book">
+    <img src="pride.jpg"><br>
+    Pride and Prejudice
+    <span class="price">&#8377;300</span>
+    <form action="order.php" method="POST">
+      <input type="hidden" name="book_name" value="Pride and Prejudice">
+      <input type="hidden" name="price" value="300">
+      <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+  </div>
+</div>
+
+<div class="category">
+  <h2>Non-Fiction</h2>
+
+  <div class="book">
+    <img src="wings.jpg"><br>
+    Wings of Fire
+    <span class="price">&#8377;250</span>
+    <form action="order.php" method="POST">
+      <input type="hidden" name="book_name" value="Wings of Fire">
+      <input type="hidden" name="price" value="250">
+      <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+  </div>
+
+  <div class="book">
+    <img src="habit.jpg"><br>
+    The Power of Habit
+    <span class="price">&#8377;400</span>
+    <form action="order.php" method="POST">
+      <input type="hidden" name="book_name" value="The Power of Habit">
+      <input type="hidden" name="price" value="400">
+      <button type="submit" class="buy-btn">Buy Now</button>
+    </form>
+  </div>
+</div>
+
+<p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Tags</title>
+
+    <link rel="stylesheet" href="#">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.7;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        #first{
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+
+    <script>
+        function showMessage() {
+            alert("Hello from JavaScript!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML TAGS</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- BASIC STRUCTURE TAGS -->
+        <section class="box">
+
+        <div id="first">
+            <h2>1. BASIC STRUCTURE TAGS</h2>
+
+            <h3>DOCTYPE</h3>
+            <p>Defines HTML document type.</p>
+
+            <h3>html</h3>
+            <p>Root element of webpage.</p>
+
+            <h3>head</h3>
+            <p>Contains metadata, title, styles.</p>
+
+            <h3>title</h3>
+            <p>Browser tab title.</p>
+
+            <h3>body</h3>
+            <p>Visible webpage content.</p>
+        </div>
+            
+        </section>
+
+        <!-- HEADING TAGS -->
+        <section class="box">
+            <h2>2. HEADING TAGS</h2>
+
+            <h1>Heading H1</h1>
+            <h2>Heading H2</h2>
+            <h3>Heading H3</h3>
+            <h4>Heading H4</h4>
+            <h5>Heading H5</h5>
+            <h6>Heading H6</h6>
+        </section>
+
+        <!-- TEXT FORMATTING -->
+        <section class="box">
+            <h2>3. TEXT FORMATTING TAGS</h2>
+
+            <p>This is paragraph tag.</p>
+
+            Hello <br> World
+
+            <hr>
+
+            <p><b>Bold Text</b></p>
+
+            <p><strong>Important Text</strong></p>
+
+            <p><i>Italic Text</i></p>
+
+            <p><em>Emphasized Text</em></p>
+
+            <p><u>Underline Text</u></p>
+
+            <p><mark>Highlighted Text</mark></p>
+
+            <p><small>Small Text</small></p>
+
+            <p><del>Deleted Text</del></p>
+
+            <p><ins>Inserted Text</ins></p>
+
+            <p>H<sub>2</sub>O</p>
+
+            <p>x<sup>2</sup></p>
+        </section>
+
+        <!-- LINKS AND MEDIA -->
+        <section class="box">
+            <h2>4. LINK AND MEDIA TAGS</h2>
+
+            <a href="https://example.com" target="_blank">Visit Example</a>
+
+            <br><br>
+
+            <img src="https://via.placeholder.com/200"
+                alt="Sample Image">
+
+            <br><br>
+
+            <audio controls>
+                <source src="song.mp3" type="audio/mp3">
+            </audio>
+
+            <br><br>
+
+            <video controls width="300">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- LIST TAGS -->
+        <section class="box">
+            <h2>5. LIST TAGS</h2>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+            </ol>
+
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Markup Language</dd>
+
+                <dt>Java</dt>
+                <dd>Programming Language</dd>
+            </dl>
+        </section>
+
+        <!-- TABLE TAGS -->
+        <section class="box">
+            <h2>6. TABLE TAGS</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Surya</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sam</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Table Footer</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+        <!-- FORM TAGS -->
+        <section class="box">
+            <h2>7. FORM TAGS</h2>
+
+            <form>
+
+                <label>Name:</label>
+                <input type="text">
+
+                <br><br>
+
+                <label>Password:</label>
+                <input type="password">
+
+                <br><br>
+
+                <label>Email:</label>
+                <input type="email">
+
+                <br><br>
+
+                <label>Number:</label>
+                <input type="number">
+
+                <br><br>
+
+                <label>Date:</label>
+                <input type="date">
+
+                <br><br>
+
+                <label>Checkbox:</label>
+                <input type="checkbox">
+
+                <br><br>
+
+                <label>Radio:</label>
+                <input type="radio">
+
+                <br><br>
+
+                <label>File:</label>
+                <input type="file">
+
+                <br><br>
+
+                <label>Textarea:</label>
+                <textarea rows="4" cols="30"></textarea>
+
+                <br><br>
+
+                <label>Select Course:</label>
+
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit">
+
+                <button type="button" onclick="showMessage()">
+                    Click Me
+                </button>
+
+            </form>
+        </section>
+
+        <!-- SEMANTIC TAGS -->
+        <section class="box">
+            <h2>8. SEMANTIC TAGS</h2>
+
+            <article>
+                This is an article section.
+            </article>
+
+            <aside>
+                This is sidebar content.
+            </aside>
+
+            <section>
+                <h3>About Section</h3>
+                <p>Section content here.</p>
+            </section>
+        </section>
+
+        <!-- DIVISION TAGS -->
+        <section class="box">
+            <h2>9. DIVISION TAGS</h2>
+
+            <div>
+                This is DIV container.
+            </div>
+
+            <p>
+                This is <span>SPAN</span> tag example.
+            </p>
+        </section>
+
+        <!-- META AND SCRIPT -->
+        <section class="box">
+            <h2>10. META AND SCRIPT TAGS</h2>
+
+            <p>Meta, Link, Style and Script tags are used inside head section.</p>
+        </section>
+
+        <!-- IFRAME AND EMBED -->
+        <section class="box">
+            <h2>11. IFRAME AND EMBED TAGS</h2>
+
+            <iframe src="https://example.com"
+                width="300"
+                height="150">
+            </iframe>
+
+            <br><br>
+
+            <embed src="sample.pdf"
+                width="300"
+                height="200">
+        </section>
+
+        <!-- HTML5 SPECIAL TAGS -->
+        <section class="box">
+            <h2>12. HTML5 SPECIAL TAGS</h2>
+
+            <canvas id="myCanvas"
+                width="200"
+                height="100"
+                style="border:1px solid black;">
+            </canvas>
+
+            <br><br>
+
+            <figure>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Nature">
+
+                <figcaption>Nature Image</figcaption>
+            </figure>
+
+            <details>
+                <summary>Read More</summary>
+
+                Hidden Text Inside Details Tag.
+            </details>
+        </section>
+
+        <!-- INPUT TYPES -->
+        <section class="box">
+            <h2>13. COMMON INPUT TYPES</h2>
+
+            <input type="text" placeholder="Text">
+
+            <br><br>
+
+            <input type="password" placeholder="Password">
+
+            <br><br>
+
+            <input type="email" placeholder="Email">
+
+            <br><br>
+
+            <input type="number" placeholder="Number">
+
+            <br><br>
+
+            <input type="date">
+
+            <br><br>
+
+            <input type="checkbox"> Checkbox
+
+            <br><br>
+
+            <input type="radio"> Radio
+
+            <br><br>
+
+            <input type="file">
+
+            <br><br>
+
+            <input type="submit">
+        </section>
+
+        <!-- SIMPLE COMPLETE PROGRAM -->
+        <section class="box">
+            <h2>14. SIMPLE COMPLETE HTML PROGRAM</h2>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+    &lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+
+    &lt;img src="image.jpg" alt="Image"&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;form&gt;
+        &lt;label&gt;Name:&lt;/label&gt;
+        &lt;input type="text"&gt;
+
+        &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright © HTML Tags Guide
+    </footer>
+
+</body>
+
+</html>
